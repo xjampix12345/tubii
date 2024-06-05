@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialbox Example</title>
+    <!-- Incluye Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Tu contenido HTML aquí -->
+    <img class="materialboxed" width="650" src="https://materializecss.com/images/sample-1.jpg">
+    <img class="materialboxed" width="650" src="img/ad-blog.png">
+    <img class="materialboxed" width="650" src="img/escritorio.jpg">
+    <img class="materialboxed" width="650" src="img/books-1617327_640.jpg">
+    <img class="materialboxed" width="650" src="img/ad-blog.png">
+    <img class="materialboxed" width="650" src="img/ad-blog.png">
+    <img class="materialboxed" width="650" src="img/ad-blog.png">
+
+
+    <!-- Incluye jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Incluye Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- Tu código JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+        $('.materialboxed').materialbox();
+      });
+    </script>
+</body>
+</html>
